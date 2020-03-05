@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: -webkit-fill-available;
+  
+  
+  color: white;
+}
+
+.App-logo {
+  height: 307px;
+  pointer-events: none;
+  margin-top: 38px;
+
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  width:500px;
+  list-style: none;
+  margin-top: -204px;
+  padding: 0;
+  border-bottom: 3px solid #12E8F6;
+
+}
+
+.titre{
+  position:relative;
+}
+.titre:hover{
+  color: #12E8F6;
+}
+
+.dropdown{
+  color: coral;
+  display:none;
+  position: absolute;
+  list-style: none;
+  width: 150px;
+  border:solid #12E8F6;
+  align-items: baseline;
+}
+.titre:hover .dropdown{
+  display:flex;
+  flex-direction: column;
+}
